@@ -75,7 +75,7 @@ class _VideoDetectionPageState extends State<VideoDetectionPage> {
         });
 
         // Show a popup if confidence is below 30
-        if (confidence < 30) {
+        if (confidence < 0.30) {
           _showPopupMessage('Unfamiliar Face Detected');
         }
       } else {
